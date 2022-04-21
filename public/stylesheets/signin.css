@@ -1,0 +1,121 @@
+.heading{
+    text-align: center;
+    border-bottom:1px solid rgb(31, 31, 31) ;
+    padding: 2% 5% ;
+    width: 100%;
+    background-color: black;
+    border: black;
+}
+.heading a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+
+}
+.reg{
+    color:rgb(31, 31, 31);
+    text-align: center;
+    padding: 2% 5% ;  
+}
+
+.reg a{
+    /* border-bottom:1px solid rgb(175, 175, 175) ; */
+    color:rgb(31, 31, 31);
+    /* text-decoration: none; */
+    font-size: 168%;
+    display: inline; 
+}
+.reg a:hover{
+    color: #535353;
+}
+.coupon{
+    width: 100%;
+}
+.coupon p{
+    background-color: rgb(175, 175, 175);
+    color: rgb(31, 31, 31);
+    padding: 2% 3%  ;  
+    text-align: left;
+    width: 100%;
+
+}
+.form-lo{
+    padding: 2% 30% ;  
+
+}
+@media (max-width: 900px)  {
+    .form-lo{
+        padding: 2% 15% ;  
+    
+    }
+    .coupon p{
+        padding: 1% 3%  ;  
+    }
+}
+.submit{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.submit:hover{
+    background-color: #1d1d1d;
+    color: white;
+   
+}
+.or{
+    padding: 0% 30% ;  
+    text-align: center;
+
+}
+.colm{
+    padding: 11px 0 0 0;
+}
+
+.colm div{
+    border-top: 1px solid;
+}
+.forget{
+    padding: 0% 30% ;  
+    margin-top: -20px;
+}
+.forget a{
+    text-decoration: none;}
+@media (max-width: 900px)  {
+    .or{
+        padding: 0% 17% ;  
+        text-align: center;
+    
+    }
+    .forget{
+        padding: 0% 17% ;  
+    }
+}
+
+.social{
+    padding: 0% 30% 2% 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.social a{
+    text-align: center;
+    padding: 0% 5%;
+}
+.social a img{
+    width: 40px; 
+    height: 40px;
+
+}
+
+.cont{
+    padding: 0% 30%;
+
+}
+@media (max-width: 900px)  {
+    .social{
+        padding: 0% 17 2% 17%;
+    }
+    .cont{
+        padding: 3% 15%;
+    
+    }
+}

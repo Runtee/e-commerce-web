@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% if (pageName) { %>
+    <title>BestBags | <%= pageName %></title>
+    <%} else {%>
+    <title>Shopping Cart</title>
+    <% } %>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/91abd10b8f.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- <link rel="stylesheet" href="/stylesheets/style.css" /> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link href="/stylesheets/signin.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+<section class="containee" >
+  <div class="heading">
+      <h2><a href="/" class="link">Trustshop</a> </h2>
+  </div>
+  <div class="reg">
+      <span>
+      <a href="#" id="s-link">Sign in</a></span>
+  </div>
+
+
+  <div id="signin">
+    <% if(errorMsg != null && errorMsg.length>0) {%>
+    <div id="flash-msg" class="alert alert-danger">
+      <%=errorMsg %>
+    </div>
+    <%}%>
+  <div class="form-lo form-floating mb-3">
+    <form action="/auth/signin" method="POST">
+
+       
+          <div>
+          </div>
+          <div class="mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email address">
+          </div>
+          <div class="mb-3">
+              <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+          </div>
+          <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+          <button class="btn rounded-pill btn-lg submit"> Sign in </button>
+  </div>
+  <div class="forget">
+      <p><a href="/auth/forgot-password">forget password</a></p>
+  </div>
+  <div class="or">
+      <div class="row">
+          <div class="col-3 colm">
+              <div></div>
+
+          </div>
+          <div class="col-6 con">
+              <p>Or continue with</p>
+          </div>
+          <div class="col-3 colm">
+              <div></div>
+
+          </div>
+
+      </div>
+  </div>
+  <div class="social">
+      <a href="/auth/facebook"><img src="/img/facebook-brands.svg"></svg> </a>
+
+  </div>
+  
+  </form>
+  </div>
+
+
+</section>
+<script src="/javascripts/home.js"></script>
+
+<%- include ../partials/footer %>

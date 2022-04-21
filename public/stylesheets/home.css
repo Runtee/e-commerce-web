@@ -1,0 +1,162 @@
+
+
+/* img{
+    width: 800px;
+    height: 500px;
+} */
+.footers{
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-top: 3% ;
+  padding-bottom:4% ;
+  padding: 3% 5%;
+  position: relative;
+  /* height: 100%; */
+
+}
+.footer{
+
+  position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+.footer h3{
+  font-weight:300 ;
+  font-size: 18px;
+  text-transform:uppercase ;
+
+}
+.menu li {
+display: inline-flex;
+list-style: none;
+display: block;
+margin: -1;
+padding: 0%;
+
+
+}
+.menu li a {
+  text-decoration: none;
+  color: rgb(209, 209, 209);
+  text-transform: uppercase;
+  font-size:85%
+}
+.menu{
+  margin-left: 0;
+  padding-left: 0;
+
+}
+.line{
+  border-bottom: 0.3px solid rgb(209, 209, 209);
+  margin: 2.5% 0% 2.5% 0;
+}
+.copyright{
+  color: rgb(209, 209, 209);
+  font-size: 85%;
+}
+.copyright a{
+  text-decoration: none;
+  color: rgb(209, 209, 209);
+}
+.copyright a:hover{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.footer-menu ul{
+  display:inline;
+list-style: none;
+margin: 0;
+padding: 0%;
+
+}
+.footer-menu li{
+  display:flex;
+list-style: none;
+border-right: 0.1px solid rgb(209, 209, 209) ;
+/* margin: -1; */
+padding-left: 2%;
+padding-right: 2%;
+float: left;
+
+}
+.footer-menu li:last-child{
+border-right: none
+
+
+}
+.footer-menu li a{
+  font-size: 83%;
+  text-decoration: none;
+  color: rgb(209, 209, 209);
+}
+.payment{
+  display:inline;
+list-style: none;
+  margin: 0;
+padding: 0%;
+
+list-style: none;
+
+}
+
+.payment li{
+  display:flex;
+list-style: none;
+padding-left: 1%;
+padding-right: 1%;
+float: left;
+
+}
+
+.payment li a{
+  font-size: 75%;
+  text-decoration: none;
+  color: rgb(209, 209, 209);
+}
+.section4{
+  background-color: rgb(32, 31, 31);
+  padding: 1% 5% 0% 5%;
+}
+.newsletter-b{
+  font-size:20px ;
+  font-weight: 500;
+  color: rgb(209, 209, 209);
+}
+.newsletter-m{
+  font-size: medium;
+  font-weight: 300;
+}
+.inp{
+  border-radius:20px 0 0px 20px ;
+
+  height: 1.2em;
+  min-height: calc(1.3em + (1rem + 2px));
+}
+@media (max-width: 900px) {
+  .inp{
+    height: 1em;
+  min-height: calc(1em + (1rem + 2px));
+  width: 70%;
+  min-width: auto;
+  }
+}
+.button{
+  border-radius:20px ;
+  border-top-left-radius:0 ;
+  border-bottom-left-radius: 0;
+  height: 1.2em;
+  min-height: calc(1.3em + (1rem + 2px));
+}
+@media (max-width: 900px) {
+  .button{
+    height: 100%;
+  min-height: calc(1em + (1rem + 2px));
+  width: 100%;
+  min-width: auto;
+  font-size: 15px;
+  }
+  
+}
+
